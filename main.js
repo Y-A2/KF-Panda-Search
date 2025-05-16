@@ -14,7 +14,7 @@ function theme() {
         document.getElementById("h1").style.color = "black";
         document.getElementById("h2").style.color = "black";
         document.getElementById("p").style.color = "black";
-        document.getElementById("div").style.backgroundColor = "rgba(128, 128, 128, 0.7)";;
+        document.getElementById("div").style.backgroundColor = "rgba(128, 128, 128, 0.7)";
     } else if (document.getElementById("theme-in").value.toLowerCase() == "random") {
         var random1 = Math.random() * 255;
         var random2 = Math.random() * 255;

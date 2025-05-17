@@ -9,12 +9,20 @@ function theme() {
         document.getElementById("h2").style.color = "white";
         document.getElementById("p").style.color = "white";
         document.getElementById("div").style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-    } else if (document.getElementById("theme-in").value == "light" || document.getElementById("theme-in").value == "white"){
-        document.getElementById("body").style.backgroundColor = "rgba(255,255,255, 0.7)";
-        document.getElementById("h1").style.color = "black";
-        document.getElementById("h2").style.color = "black";
-        document.getElementById("p").style.color = "black";
-        document.getElementById("div").style.backgroundColor = "rgba(128, 128, 128, 0.7)";
+        document.getElementById("theme-btn").style.background = "black"
+        document.getElementById("btn").style.background = "black"
+        document.getElementById("theme-btn").style.border = "2px solid white";
+        document.getElementById("btn").style.border= "2px solid white";
+    } else if (document.getElementById("theme-in").value == "light" || document. getElementById("theme-in").value == "white"){
+        document.getElementById("body").style.backgroundColor = "rgba(255,255,255,0.7)";
+        document.getElementById("h1").style.color = "white";
+        document.getElementById("h2").style.color = "white";
+        document.getElementById("p").style.color = "white";
+        document.getElementById("div").style.backgroundColor = "rgba(72, 116, 63, 0.7)";
+        document.getElementById("theme-btn").style.background = "rgb(72, 116, 63)";
+        document.getElementById("btn").style.background = "rgb(72, 116, 63)";
+        document.getElementById("theme-btn").style.border= "2px solid black";
+        document.getElementById("btn").style.border= "2px solid black";
     } else if (document.getElementById("theme-in").value.toLowerCase() == "random") {
         var random1 = Math.random() * 255;
         var random2 = Math.random() * 255;
@@ -40,15 +48,15 @@ function theme() {
 }
 function search()
 {
-    if (document.getElementById("search").value.toLowerCase() == "po" || document.getElementById("search").value.toLowerCase() == "dragonwarrior" || document.getElementById("search").value.toLowerCase() == "master oogway")
+    if (document.getElementById("search").value.toLowerCase() == "po" || document.getElementById("search").value.toLowerCase() == "dragonwarrior" || document.getElementById("search").value.toLowerCase() == "dragon warrior")
     {
         document.getElementById("img").src = "img/po.png";
         document.getElementById("h2").innerHTML = "Po";
         document.getElementById("p").innerHTML = '"Buddy I am the Dragon Warrior."';
     } else if (document.getElementById("search").value.toLowerCase() == "viper") {
-    document.getElementById("img").src = "img/viper.png"; 
-    document.getElementById("h2").innerHTML = "Viper";
-    document.getElementById("p").innerHTML = `"I don't need to bite to fight!"`;
+        document.getElementById("img").src = "img/viper.png"; 
+        document.getElementById("h2").innerHTML = "Viper";
+        document.getElementById("p").innerHTML = `"I don't need to bite to fight!"`;
      } else if (document.getElementById("search").value.toLowerCase() == "tigress") {
         document.getElementById("img").src = "img/tigress.png";
         document.getElementById("h2").innerHTML = "Tigress";
@@ -60,7 +68,7 @@ function search()
     } else if (document.getElementById("search").value.toLowerCase() == "tai lung") {
         document.getElementById("img").src = "img/tai-lung.png";
         document.getElementById("h2").innerHTML = "Tai Lung";
-        document.getElementById("p").innerHTML = 'So that is his name: Po... Finally, a worthy opponent! Our battle will be legendary!"';
+        document.getElementById("p").innerHTML = '"So that is his name: Po... Finally, a worthy opponent! Our battle will be legendary!"';
     } else if (document.getElementById("search").value.toLowerCase() == "shifu") {
         document.getElementById("img").src = "img/shifu.png";
         document.getElementById("h2").innerHTML = "Shifu";
